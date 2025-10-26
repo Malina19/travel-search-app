@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // ============================================
 async function searchFlights(departure, arrival, departDate, returnDate, passengers, tripType) {
 	try {
-		let url = `http://localhost:3000/api/flights?`
+		let url = `${API_URL}/api/flights?`
 		url += `departure=${departure}`
 		url += `&arrival=${arrival}`
 		url += `&departDate=${departDate}`
