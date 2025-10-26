@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelSearch</title>
+
+    <script src="https://kit.fontawesome.com/81ec8a3e4f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/flights.css">
+    <link rel="stylesheet" href="./css/hotels.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navMenu" id="navbar">
+            <div class="navMenu__title"><a href="index.html">Wyszukiwarka podróży</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flights.html">Loty</a></li>
+                <li><a href="hotels.html">Hotele</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flights">
+        <h1 class="flights__title">Wyszukaj loty</h1>
+
+        <form class="search-form">
+            <div class="search-form__type">
+                <label class="radio-container">
+                    <input type="radio" name="tripType" value="roundTrip" checked>
+                    <span class="radio-label">W dwie strony</span>
+                </label>
+                <label class="radio-container">
+                    <input type="radio" name="tripType" value="oneWay">
+                    <span class="radio-label">W jedną stronę</span>
+                </label>
+            </div>
+
+            <div class="search-form__row">
+                <div class="search-form__group">
+                    <label for="departure">Miasto pochodzenia/Lotnisko</label>
+                    <input type="text" id="departure" placeholder="np. Nowy Jork (JFK)" required>
+                </div>
+                <div class="search-form__group">
+                    <label for="arrival">Miasto docelowe/Lotnisko</label>
+                    <input type="text" id="arrival" placeholder="np. Los Angeles (LAX)" required>
+                </div>
+            </div>
+
+            <div class="search-form__row">
+                <div class="search-form__group">
+                    <label for="departDate">Data wyjazdu</label>
+                    <input type="date" id="departDate" required>
+                </div>
+                <div class="search-form__group return-date">
+                    <label for="returnDate">Data zwrotu</label>
+                    <input type="date" id="returnDate" required>
+                </div>
+                <div class="search-form__group">
+                    <label for="passengers">Pasażerowie</label>
+                    <input type="number" id="passengers" min="1" max="9" value="1" required>
+                </div>
+            </div>
+
+            <div class="search-form__buttons">
+                <button type="submit" class="btn btn--primary">
+                    <i class="fa-solid fa-plane"></i> Znajdź loty
+                </button>
+                <button type="reset" class="btn btn--secondary">
+                    <i class="fa-solid fa-rotate"></i> Wyczyść
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="index.html"><img src="path/to/logo.png" alt="Logo" /></a>
+            <!-- Zmień 'path/to/logo.png' na rzeczywistą ścieżkę do logo -->
+        </div>
+        <nav class="footer__nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flights.html">Loty</a></li>
+                <li><a href="#hotels">Hotele</a></li>
+            </ul>
+        </nav>
+        <nav class="footer__links">
+            <ul>
+                <li><a href="index.html#aboutus">O nas</a></li>
+                <li><a href="index.html#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/flights.js"></script>
+</body>
+
+</html>

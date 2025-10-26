@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelSearch</title>
+
+    <script src="https://kit.fontawesome.com/81ec8a3e4f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/flights.css">
+    <link rel="stylesheet" href="./css/hotels.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navMenu" id="navbar">
+            <div class="navMenu__title"><a href="index.html">Wyszukiwarka podróży</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flights.html">Loty</a></li>
+                <li><a href="hotels.html">Hotele</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="header">
+            <div class="bg-shadow"></div>
+            <h1 class="header__title">Odkryj swój kolejny kierunek</h1>
+            <p class="header__subtitle">Wyszukaj loty oraz hotele na całym świecie</p>
+            <a class="header__link" href="flights.html"><button class="header__btn">Wyszukaj loty</button></a>
+        </div>
+    </header>
+    <main>
+        <section class="aboutus">
+            <h2 class="aboutus__title">Kim jesteśmy</h2>
+            <p class="aboutus__text">TravelSearch to Twój zaufany towarzysz w odkrywaniu idealnych podróży.
+                Specjalizujemy się w dostarczaniu najlepszych ofert lotów i hoteli z całego świata, wszystko w jednej,
+                wygodnej platformie. </p>
+
+            <p class="aboutus__text-two">Naszą misją jest uproszczenie planowania podróży poprzez zapewnienie
+                natychmiastowego dostępu do
+                kompleksowych wyników wyszukiwania. Niezależnie od tego, czy planujesz podróż służbową, czy wymarzone
+                wakacje, ułatwiamy porównywanie cen, sprawdzanie dostępności i znalezienie dokładnie tego, czego
+                potrzebujesz.</p>
+
+            <p class="aboutus__text-three">Dzięki najnowocześniejszej technologii wyszukiwania i współpracy z wiodącymi
+                dostawcami usług
+                turystycznych jesteśmy gotowi pomóc Ci podróżować mądrzej, oszczędzać czas i tworzyć niezapomniane
+                wspomnienia.</p>
+        </section>
+
+        <section class="contact">
+            <h2 class="contact__title">Skontaktuj się z nami</h2>
+            <form class="contact__form">
+                <div class="contact__form-group">
+                    <label for="name">Pełne imię i nazwisko</label>
+                    <input type="text" id="name" placeholder="Jan Kowalski" required>
+                </div>
+
+                <div class="contact__form-group">
+                    <label for="email">Adres e-mail</label>
+                    <input type="email" id="email" placeholder="jan@example.com" required>
+                </div>
+
+                <div class="contact__form-group">
+                    <label for="subject">Temat</label>
+                    <input type="text" id="subject" placeholder="Jak możemy pomóc?" required>
+                </div>
+
+                <div class="contact__form-group">
+                    <label for="message">Wiadomość</label>
+                    <textarea id="message" placeholder="Powiedz nam więcej o swoim zapytaniu..." required></textarea>
+                </div>
+
+                <button type="submit" class="contact__submit-btn">Wyślij wiadomość</button>
+            </form>
+        </section>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="index.html"><img src="path/to/logo.png" alt="Logo" /></a>
+            <!-- Zmień 'path/to/logo.png' na rzeczywistą ścieżkę do logo -->
+        </div>
+        <nav class="footer__nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flights.html">Loty</a></li>
+                <li><a href="#hotels.html">Hotele</a></li>
+            </ul>
+        </nav>
+        <nav class="footer__links">
+            <ul>
+                <li><a href="#aboutus">O nas</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/flights.js"></script>
+</body>
+
+</html>
