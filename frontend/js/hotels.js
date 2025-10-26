@@ -3,7 +3,7 @@
 // ============================================
 
 const API_URL =
-	window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'travel-search-app-production.up.railway.app'
+	window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://travel-search-app-production.up.railway.app';
 
 // ============================================
 // INICJALIZACJA PO ZAŁADOWANIU STRONY

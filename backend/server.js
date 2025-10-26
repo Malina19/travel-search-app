@@ -16,6 +16,7 @@ const PORT = process.env.PORT || 3000
 
 const allowedOrigins = [
     'http://localhost:3000',
+    'http://127.0.0.1:5500',
     'https://malina19.github.io'
 ];
 
@@ -24,9 +25,10 @@ app.use(cors({
         if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
-            callback(null, true); // Tymczasowo pozwól wszystkim
+            callback(null, true);
         }
-    }
+    },
+    credentials: true
 }));
 app.use(express.json())
 app.use(express.static('./frontend'));
