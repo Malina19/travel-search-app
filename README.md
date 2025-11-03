@@ -3,7 +3,7 @@
 Full-stack aplikacja do wyszukiwania lotów i hoteli wykorzystująca SerpApi (Google Flights & Hotels API).
 
 ## 🚀 Live Demo
-👉 **[Zobacz działającą aplikację](https://twoja-nazwa-github.github.io/travel-search-app/)**
+👉 **[Zobacz działającą aplikację](https://Malina19.github.io/travel-search-app/)**
 
 Backend: [https://travel-search-backend-xxxx.onrender.com](https://travel-search-backend-xxxx.onrender.com/api/test)
 
